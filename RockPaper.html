@@ -29,10 +29,8 @@
 
 
     function playGame(playerMove) {
-
-       const computerMove=pickComputerMove();
-        let result='';
-
+       
+let computerMove=pickComputerMove();
         if (playerMove==='scissors') {
                 if (computerMove==='rock') {  
                 result='You lose'
@@ -61,7 +59,7 @@
             }
         }
     
-    alert(`You picked ${playerMove}. Computer picked ${ComputerMove}. ${result}`)
+    alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}`)
         
     }
 
