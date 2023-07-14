@@ -10,6 +10,26 @@
 
     
     <script>
+let product={
+
+name:"Shoes",
+item:{
+    rating:4.5,
+    cart:2,
+    additions:3
+},
+fun:function (){
+    console.log('Hello there');
+}
+
+}
+console.log(product.item.cart);
+console.log(JSON.stringify(product));
+
+//change from json to object
+const jsonString=JSON.stringify(product)
+console.log(JSON.parse(jsonString));
+
 
     </script>
 </body>
