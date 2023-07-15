@@ -6,8 +6,8 @@
     <title>All Basics</title>
 </head>
 <body>
-
-
+<button>Hello</button>
+<button class="js-button">Second btn</button>
     
     <script>
 let product={
@@ -18,7 +18,7 @@ item:{
     cart:2,
     additions:3
 },
-fun:function (){
+fun:function fun(){
     console.log('Hello there');
 }
 
@@ -30,6 +30,18 @@ console.log(JSON.stringify(product));
 const jsonString=JSON.stringify(product)
 console.log(JSON.parse(jsonString));
 
+
+document.title='DOM'
+console.log(document.title);
+console.log(typeof(document.body));
+
+console.log(document.body.innerHTML);
+// document.body.innerHTML='<button>Sap</button>';
+
+console.log(document.querySelector('button').innerHTML);
+document.querySelector('button').innerHTML='Add'
+
+console.log(document.querySelector('.js-button'));
 
     </script>
 </body>
