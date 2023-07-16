@@ -6,7 +6,7 @@ let score=JSON.parse(localStorage.getItem('score'))|| {
     updateScoreElement();
     moves()
     
-        function playGame(playerMove) {
+function playGame(playerMove) {
            
     let computerMove=pickComputerMove();
             if (playerMove==='scissors') {
@@ -60,7 +60,7 @@ let score=JSON.parse(localStorage.getItem('score'))|| {
     
             
         }
-    function updateScoreElement(){
+function updateScoreElement(){
     
         
         document.querySelector('.js-score')
@@ -68,7 +68,7 @@ let score=JSON.parse(localStorage.getItem('score'))|| {
     
     }
     
-        function pickComputerMove() {
+function pickComputerMove() {
             const randomNumber=Math.random();
             let computerMove='';
     

@@ -1,50 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Game</title>
-<link href="styles.css" rel="stylesheet">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Paper Game</title>
+    <link href="styles.css" rel="stylesheet">
 
-</head>
-<body>
-  <h1>Rock Paper Scissors</h1>  
-<button onclick="
-    playGame('rock');
+    </head>
+    <body>
+    <h1>Rock Paper Scissors</h1>  
+    <button onclick="
+        playGame('rock');
+        
+    " class="move-btn"><img src="images/rock-emoji.png" class="move-icon"></button>
+
+    <button onclick="
     
-" class="move-btn"><img src="images/rock-emoji.png" class="move-icon"></button>
+        playGame('paper');
+    "
+    class="move-btn"><img src="images/paper-emoji.png"  class="move-icon"></button>
 
-<button onclick="
- 
-    playGame('paper');
-"
-class="move-btn"><img src="images/paper-emoji.png"  class="move-icon"></button>
+    <button onclick="
 
-<button onclick="
+        playGame('scissors');
+        
+    "
+    class="move-btn"><img src="images/scissors-emoji.png"  class="move-icon"></button>
 
-    playGame('scissors');
-    
-"
-class="move-btn"><img src="images/scissors-emoji.png"  class="move-icon"></button>
+    <p class="js-result" ></p>
+    <br>
+    <p class="js-moves"></p> 
+    <br> <br>
+    <p class="js-score"></p>
 
-<p class="js-result" ></p>
-<br>
-<p class="js-moves"></p> 
-<br> <br>
-<p class="js-score"></p>
+    <br><br>
+    <button onclick="
 
-<br><br>
-<button onclick="
+    score.wins=0;
+    score.losses=0;
+    score.ties=0;
+    localStorage.removeItem('score');
+    updateScoreElement();
+    "
+    class="reset">Reset Score</button>
+    <script src="rock-script.js">
 
-score.wins=0;
-score.losses=0;
-score.ties=0;
-localStorage.removeItem('score');
-updateScoreElement();
-"
-class="reset">Reset Score</button>
-<script src="rock-script.js">
-
-</script>
-</body>
-</html>
+    </script>
+    </body>
+    </html>
