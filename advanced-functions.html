@@ -59,13 +59,37 @@ console.log('next line');
 // console.log('interval');
 // },2000);
 
+//preferred way to loop through an array
 
+[
+  'make dinner' ,
+  'wash dishes' ,
+  'watch youtube'
+].forEach(function (value,index) {
 
+if (value==='wash dishes') {
+    return;
+}
 
+    console.log(value.toUpperCase());
+    console.log(value);
+    console.log(index);
+});
 
+//arrow functions
+const arrowfunction=(param,param2)=>{
+    console.log('hello');
+    return 5;
+};
+arrowfunction();
 
+const oneParam= param=>{
+    console.log(param+2);
+}
+oneParam(10);
 
-
+const oneline=()=>3+4;
+console.log(oneline);
     </script>
 </body>
 </html>

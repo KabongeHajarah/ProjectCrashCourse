@@ -11,18 +11,18 @@ const todoList=[{
    ];
 renderTodoList()
 function renderTodoList() {
-    
-
-    let todoListHtml='';
-    for (let i = 0; i < todoList.length; i++) {
-        const todo = todoList[i];
+  
+let todoListHtml='';
+ todoList.forEach(
+    function(todo,index){
+        
         const name=todo.name;
         const dueDate=todo.dueDate
     const html=`
         <div>${name}</div> 
         <div>${dueDate}</div>
         <button onclick="
-            todoList.splice(${i},1);
+            todoList.splice(${index},1);
 
             renderTodoList();
 
@@ -30,8 +30,8 @@ function renderTodoList() {
             `;
 
     todoListHtml+=html;
-        
     }
+ );   
 
 
     document.querySelector('.js-todo-list')
