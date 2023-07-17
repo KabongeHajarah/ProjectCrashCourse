@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Functions</title>
+</head>
+<body>
+    
+    <script>
+        function greeting() {
+           console.log('Hello'); 
+        }
+        greeting();
+
+        const num=2;
+
+        //Anonymous Function --- functionwithout a name
+        const function1=function(){
+            console.log('Hello there ');
+        }
+        function1();
+        console.log(typeof(function1));
+
+        const Object1={
+            num:2,
+            fun:function(){  //This is called a method
+                console.log('Hi,My name is Bellah');
+            }
+        }
+        Object1.fun();
+
+        function display(param) {
+            console.log(param);
+        }
+
+        display('Shabellah');
+        display(function (n) {
+            console.log(n**2);
+
+        }
+       (3)
+       
+        );
+       
+//times
+setTimeout(function(){
+    console.log('timeout');
+    console.log('Bellah here');
+},3000 ); //Takes two parameters(function, how long to wait before running a function(millisecs))
+
+
+// Anychronous Code---wont wait for line to finish before going to the next
+console.log('next line');
+
+//Synchronous Code---wait for one line to finish before going to the next
+
+// setInterval(function(){ 
+// console.log('interval');
+// },2000);
+    </script>
+</body>
+</html>
